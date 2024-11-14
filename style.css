@@ -1,0 +1,67 @@
+/* style.css */
+.gallery-container {
+    display: flex; /*using flex as per assignment requirements*/
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .gallery-container img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s; /* smooth transition while hovering */
+  }
+  
+  .gallery-container img:hover {
+    transform: scale(1.1); /* enlarge image on hover */
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    position: relative; /*  it positions the close button */
+  }
+  
+  .close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-modal:hover,
+  .close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .modal-caption {
+    margin-top: 10px;
+    text-align: center;
+  }
