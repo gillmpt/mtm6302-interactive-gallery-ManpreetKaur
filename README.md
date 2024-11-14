@@ -1,1 +1,2 @@
-# mtm6302-interactive-gallery-ManpreetKaur
+Student name: Manpreet Kaur
+Student Number: 90541129349
